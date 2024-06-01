@@ -89,15 +89,17 @@ include "header.php"
                                 <h3 class="select-lens-title mb-0">Enter Prescription</h3>
                             </div>
                             <div class="prescription-img-area">
-                                <img class="img-fluid prescription-img" src="./assets/images/prescription-img.png" alt="">
+                                <img id="previewImg" class="img-fluid prescription-img" src="./assets/images/prescription-img.png" alt="Image Preview">
                             </div>
-                            <div class="prescription-img-upload-area">
-                                <div class="d-flex flex-column justify-content-center align-items-center gap-0 row-gap-3">
-                                    <img class="img-fluid" src="./assets/images/upload-icon-img.png" alt="">
-                                    <h4 class="drag-drop-title">Drag & Drop Image</h4>
-                                    <span>or</span>
-                                    <input class="d-none" type="file" name="" id="prescription-input">
-                                    <label class="upload-prescrip-label" for="prescription-input">Upload your prescription image</label>
+                            <div class="dragBox" id="dropArea" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                                <div class="prescription-img-upload-area " >
+                                    <div class="d-flex flex-column justify-content-center align-items-center gap-0 row-gap-3">
+                                        <img class="img-fluid" src="./assets/images/upload-icon-img.png" alt="">
+                                        <h4 class="drag-drop-title">Drag & Drop Image</h4>
+                                        <span>or</span>
+                                        <input class="d-none" type="file" name="" onchange="fileChangeHandler(event);" id="uploadFile">
+                                        <label class="upload-prescrip-label" for="prescription-input">Upload your prescription image</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="drg-drop-or-manually d-flex justify-content-center align-items-center">
@@ -188,6 +190,7 @@ include "header.php"
             </div>
         </div>
     </section>
+   
 
 </main>
 
@@ -217,4 +220,38 @@ include "footer.php"
             swiper: swiper,
         },
     });
+</script>
+
+
+<script>
+    "use strict";
+
+    document.getElementById('dropArea').addEventListener('click', function() {
+        document.getElementById('uploadFile').click();
+    });
+
+    function fileChangeHandler(event) {
+        var file = event.target.files[0];
+        if (file) {
+            var fileName = URL.createObjectURL(file);
+            var previewImg = document.getElementById("previewImg");
+            previewImg.setAttribute("src", fileName);
+        }
+    }
+
+    function dragOverHandler(event) {
+        event.preventDefault();
+        document.getElementById('dropArea').className = 'draging dragBox';
+    }
+
+    function dropHandler(event) {
+        event.preventDefault();
+        document.getElementById('dropArea').className = 'dragBox';
+        var file = event.dataTransfer.files[0];
+        if (file) {
+            var fileName = URL.createObjectURL(file);
+            var previewImg = document.getElementById("previewImg");
+            previewImg.setAttribute("src", fileName);
+        }
+    }
 </script>

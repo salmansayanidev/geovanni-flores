@@ -1,5 +1,5 @@
 <?php
-include "header.php"
+    include "header.php"
 ?>
 
 
@@ -9,7 +9,7 @@ include "header.php"
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-7">
-                    <div class="pro-detail-imgs-area">
+                    <div data-tab-content id="detail-products-1" class="pro-detail-imgs-area active">
                         <div class="position-relative">
                             <div class="btn-area-360 text-end">
                                 <button type="button" class="btn-360">
@@ -70,7 +70,132 @@ include "header.php"
                             </button>
                         </div>
                     </div>
+
+                    <div data-tab-content id="detail-products-2" class="pro-detail-imgs-area">
+                        <div class="position-relative">
+                            <div class="btn-area-360 text-end">
+                                <button type="button" class="btn-360">
+                                    <img class="img-fluid" src="./assets/images/360-degrees 1.png" alt="">
+                                </button>
+                            </div>
+                            <div class="swiper pro-dtl-slider mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-gllry-img-2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-4.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-5.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-6.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-gllry-img-2.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div thumbsSlider="" class="swiper pro-dtl-gllry-sldr mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-gllry-img-2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-4.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-5.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-6.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-gllry-img-2.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-dtl-sldr-btn-area">
+                                <button type="button" class="pro-dtl-sldr-btn pre">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <button type="button" class="pro-dtl-sldr-btn next">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="pro-sldr-showmore">
+                                Show more
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div data-tab-content id="detail-products-3" class="pro-detail-imgs-area">
+                        <div class="position-relative">
+                            <div class="btn-area-360 text-end">
+                                <button type="button" class="btn-360">
+                                    <img class="img-fluid" src="./assets/images/360-degrees 1.png" alt="">
+                                </button>
+                            </div>
+                            <div class="swiper pro-dtl-slider mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-8.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-9.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-10.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div thumbsSlider="" class="swiper pro-dtl-gllry-sldr mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-8.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-9.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-10.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-dtl-sldr-btn-area">
+                                <button type="button" class="pro-dtl-sldr-btn pre">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <button type="button" class="pro-dtl-sldr-btn next">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="pro-sldr-showmore">
+                                Show more
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-12 col-lg-5">
                     <div class="pro-detail-area">
                         <div class="d-flex justify-content-between align-items-center">
@@ -139,21 +264,39 @@ include "header.php"
                                 </div>
                             </li>
                         </ul>
-                        <div class="pro-gllery-images-main">
-                            <div class="pro-gllry-img-area">
-                                <img class="img-fluid pro-gllry-img active" src="./assets/images/pro-gllry-img-1.png" alt="">
-                            </div>
-                            <div class="pro-gllry-img">
-                                <img class="img-fluid pro-gllry-img" src="./assets/images/pro-gllry-img-1.png" alt="">
-                            </div>
-                            <div class="pro-gllry-img">
-                                <img class="img-fluid pro-gllry-img" src="./assets/images/pro-gllry-img-1.png" alt="">
-                            </div>
-                            <div class="pro-gllry-img">
-                                <img class="img-fluid pro-gllry-img" src="./assets/images/pro-gllry-img-1.png" alt="">
-                                <span class="more-imgs-tag">+5 more</span>
-                            </div>
-                        </div>
+                        <ul class="pro-gllery-images-main">
+                            <li data-tab-target="#detail-products-1" class="pro-gllry-img-area active">
+                                <button class="pro-gllry-img-tabs">
+                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-1.png" alt="">
+                                </button>
+                            </li>
+                            <li data-tab-target="#detail-products-2" class="pro-gllry-img-area">
+                                <button class="pro-gllry-img-tabs">
+                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-2.png" alt="">
+                                </button>
+                            </li>
+                            <li data-tab-target="#detail-products-3" class="pro-gllry-img-area">
+                                <button class="pro-gllry-img-tabs">
+                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-dtl-gllery-img-7.png" alt="">
+                                </button>
+                            </li>
+                            <li data-tab-target="#detail-products-4" class="pro-gllry-img-area">
+                                <button class="pro-gllry-img-tabs">
+                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-1.png" alt="">
+                                </button>
+                                <!-- <span class="more-imgs-tag">+5 more</span> -->
+                            </li>
+                            <li data-tab-target="#detail-products-5" class="pro-gllry-img-area">
+                                <button class="pro-gllry-img-tabs">
+                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-1.png" alt="">
+                                </button>
+                            </li>
+                            <li data-tab-target="#detail-products-6" class="pro-gllry-img-area">
+                                <button class="pro-gllry-img-tabs">
+                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-1.png" alt="">
+                                </button>
+                            </li>
+                        </ul>
                         <div class="includes-price-area">
                             <h2 class="inclds-price-title">Price Includes:</h2>
                             <div class="inclds-price-dtl">
@@ -413,62 +556,59 @@ include "header.php"
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-<?php
-    include "newsletter-include.php"
-?>
+    <?php
+        include "newsletter-include.php"
+    ?>
 </main>
 
 
 <?php
     include "footer.php"
 ?>
+
+
 <script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/product-detail.js"></script>
 
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        // loop: true,
-        spaceBetween: 10,
-        slidesPerView: 5,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".pro-dtl-slider", {
-        // loop: true,
-        spaceBetween: 10,
-        navigation: {
-            nextEl: ".pro-dtl-sldr-btn.next",
-            prevEl: ".pro-dtl-sldr-btn.pre",
-        },
-        thumbs: {
-            swiper: swiper,
-        },
-    });
+    // var swiper = new Swiper(".mySwiper", {
+    //     // loop: true,
+    //     spaceBetween: 10,
+    //     slidesPerView: 5,
+    //     freeMode: true,
+    //     watchSlidesProgress: true,
+    // });
+    // var swiper2 = new Swiper(".pro-dtl-slider", {
+    //     // loop: true,
+    //     spaceBetween: 10,
+    //     navigation: {
+    //         nextEl: ".pro-dtl-sldr-btn.next",
+    //         prevEl: ".pro-dtl-sldr-btn.pre",
+    //     },
+    //     thumbs: {
+    //         swiper: swiper,
+    //     },
+    // });
+
+
+// const tab = document.querySelectorAll("[data-view-target]");
+    // const tabContent = document.querySelectorAll("[data-view-content]");
+
+    // tab.forEach((tab2) => {
+    //     tab2.addEventListener("click", () => {
+    //         const target = document.querySelector(tab2.dataset.viewTarget);
+    //         mySwiper.update();
+    //         console.log(target, "tab 2")
+    //         tabContent.forEach((tabContents) => {
+    //             tabContents.classList.remove("active");
+    //         });
+    //         tab.forEach((tab2inner) => {
+    //             tab2inner.classList.remove("active");
+    //         });
+    //         tab2.classList.add("active");
+    //         target.classList.add("active");
+    //     });
+    // });
+
 </script>
 
-<script>
-    const shopTabs = document.querySelectorAll("[data-tab-target]");
-    const shopTabContents = document.querySelectorAll("[data-tab-content]");
-
-    shopTabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-            const target = document.querySelector(tab.dataset.tabTarget);
-            shopTabContents.forEach((tabContent) => {
-                tabContent.classList.remove("active");
-            });
-            shopTabs.forEach((tab) => {
-                tab.classList.remove("active");
-            });
-            tab.classList.add("active");
-            target.classList.add("active");
-        });
-    });
-</script>
