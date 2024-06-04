@@ -10,12 +10,12 @@ include "header.php"
             <div class="row">
                 <div class="col-12 col-lg-7">
                     <div class="pro-detail-imgs-area">
+                        <div class="btn-area-360 text-end">
+                            <button type="button" class="btn-360">
+                                <img class="img-fluid" src="./assets/images/360-degrees 1.png" alt="">
+                            </button>
+                        </div>
                         <div class="position-relative">
-                            <div class="btn-area-360 text-end">
-                                <button type="button" class="btn-360">
-                                    <img class="img-fluid" src="./assets/images/360-degrees 1.png" alt="">
-                                </button>
-                            </div>
                             <div class="swiper pro-dtl-slider mySwiper2">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -35,25 +35,6 @@ include "header.php"
                                     </div>
                                 </div>
                             </div>
-                            <div thumbsSlider="" class="swiper pro-dtl-gllry-sldr mySwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-detail-main-img.png" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-2.png" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-3.png" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-1.png" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-2.png" />
-                                    </div>
-                                </div>
-                            </div>
                             <div class="pro-dtl-sldr-btn-area">
                                 <button type="button" class="pro-dtl-sldr-btn pre">
                                     <i class="fa-solid fa-angle-left"></i>
@@ -63,6 +44,26 @@ include "header.php"
                                 </button>
                             </div>
                         </div>
+                        <div thumbsSlider="" class="swiper pro-dtl-gllry-sldr mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-detail-main-img.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-2.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-3.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-2.png" />
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-12 col-lg-5">
@@ -208,6 +209,24 @@ include "footer.php"
         slidesPerView: 5,
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 3,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 4,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 4,
+            },
+            // when window width is >= 768px
+            767: {
+              slidesPerView: 5,
+            },
+          },
     });
     var swiper2 = new Swiper(".pro-dtl-slider", {
         // loop: true,

@@ -25,13 +25,16 @@
             <div class="col-12">
                 <div class="header-inner">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col-6 col-lg-2">
+                        <div class="col-4 col-lg-2">
                             <a class="text-decoration-none" href=".">
                                 <img class="img-fluid" src="./assets/images/logo.png" alt="">
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6 res-order-1">
                             <nav class="header-navigation">
+                                <button class="navigation-cls-btn" type="button">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
                                 <ul class="header-link-area">
                                     <li class="header-link first-li">
                                         <a class="text-decoration-none" href=".">
@@ -66,7 +69,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-6 col-lg-2">
+                        <div class="col-8 col-lg-2">
                             <div class="header-right-area">
                                 <div class="">
                                     <button type="button" class="cart-search-btn srch-opn-btn">
@@ -84,6 +87,11 @@
                                         Log In
                                     </a>
                                 </div>
+                                <div class="">
+                                    <button class="menu-btn" type="button">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -92,3 +100,17 @@
         </div>
     </div>
 </header>
+
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const menuBar = document.querySelector('.header-navigation')
+    const menuClsBtn = document.querySelector('.navigation-cls-btn')
+
+    menuBtn.addEventListener('click' , () => {
+        menuBar.classList.add('active')
+    })
+    menuClsBtn.addEventListener('click' , () => {
+        menuBar.classList.remove('active')
+    })
+</script>

@@ -1,20 +1,19 @@
-const shopTabs = document.querySelectorAll("[data-tab-target]");
-const shopTabContents = document.querySelectorAll("[data-tab-content]");
+const detailTabs = document.querySelectorAll("[data-view-target]");
+const detailTabContents = document.querySelectorAll("[data-view-content]");
 
-shopTabs.forEach((tab) => {
+detailTabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.tabTarget);
-    shopTabContents.forEach((tabContent) => {
+    const target = document.querySelector(tab.dataset.viewTarget);
+    detailTabContents.forEach((tabContent) => {
       tabContent.classList.remove("active");
     });
-    shopTabs.forEach((tab) => {
+    detailTabs.forEach((tab) => {
       tab.classList.remove("active");
     });
     tab.classList.add("active");
     target.classList.add("active");
   });
 });
-
 
 // slider tabs js
 
@@ -37,6 +36,24 @@ document.addEventListener("DOMContentLoaded", function () {
             .querySelector(".mySwiper"),
           slidesPerView: 5,
           spaceBetween: 10,
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 3,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 4,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 4,
+            },
+            // when window width is >= 768px
+            767: {
+              slidesPerView: 5,
+            },
+          },
         },
       },
     });

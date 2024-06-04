@@ -116,6 +116,31 @@ html {
 .header-link.active a {
   font-family: var(--Outfit-Medium);
 }
+.navigation-cls-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 0 0 6px 0 #000000a8;
+}
+.menu-btn {
+  display: none;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  color: var(--theme-color);
+}
 /* header css end */
 
 /* banner section css start */
@@ -1239,7 +1264,7 @@ h2.pro-detail-title {
 }
 .pro-gllery-images-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   padding-left: 30px;
   margin-top: 25px;
@@ -1312,9 +1337,11 @@ img.img-fluid.pro-gllry-img {
 .pro-detail-imgs-area {
   padding: 0 30px;
   position: relative;
+}
+.pro-detail-imgs-area.tab {
   display: none;
 }
-.pro-detail-imgs-area.active {
+.pro-detail-imgs-area.tab.active {
   display: block;
 }
 
@@ -1388,10 +1415,25 @@ img.img-fluid.pro-gllry-img {
   object-position: center;
   object-fit: contain;
   cursor: pointer;
+  position: relative;
 }
+.pro-dtl-gllery-img::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  background-color: blue;
+  opacity: 0.5;  /* Make the overlay semi-transparent */
+  z-index: 99;
+}
+
 .pro-detail-main-img {
-  height: 254px;
-  width: 697px;
+  max-height: 254px;
+  max-width: 697px;
+  height: auto;
+  width: 100%;
 }
 .btn-area-360 {
   margin-bottom: 80px;
@@ -1408,7 +1450,7 @@ img.img-fluid.pro-gllry-img {
   font-size: 1.6rem;
   border: none;
   position: absolute;
-  top: 43%;
+  top: 52%;
   z-index: 999;
   transform: translateY(-50%);
 }
@@ -1549,20 +1591,14 @@ img.img-fluid.pro-gllry-img {
   text-align: center;
   margin-bottom: 50px;
 }
-.related-products-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .related-pro-inner {
-  width: 24.5%;
   text-align: center;
   position: relative;
   border-radius: 10px;
   background-color: white;
   padding: 26px 10px;
   transition: 0.3s;
+  margin: 10px;
 }
 .related-pro-inner:hover {
   box-shadow: 0 0 16.5px 0 #00000026;
@@ -1608,6 +1644,9 @@ img.img-fluid.pro-gllry-img {
 .pro-gllry-img-tabs {
   background-color: transparent;
   border: none;
+}
+.pro-dtl-gllry-sldr .mySwiper .swiper-slide-thumb-active img {
+  opacity: 1;
 }
 /* product detail css end */
 

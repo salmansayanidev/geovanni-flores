@@ -31,7 +31,7 @@
                     <div class="our-products-main">
                         <div class="row">
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-2.png" alt="">
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-3.png" alt="">
@@ -131,7 +131,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">
@@ -165,7 +165,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">
@@ -199,7 +199,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-2.png" alt="">
@@ -232,7 +232,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-3.png" alt="">
@@ -265,7 +265,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="products-area"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">

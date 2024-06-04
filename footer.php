@@ -6,7 +6,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="footer-left-area">
                             <a class="text-decoration-none" href=".">
-                                <img class="img-fluid" src="./assets/images/footer-logo.png" alt="">
+                                <img class="img-fluid footer-logo" src="./assets/images/footer-logo.png" alt="">
                             </a>
                             <p class="footer-para">
                                 Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas.
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-12 col-lg-8 col-xl-7">
                         <div class="row justify-content-between">
-                            <div class="col-6 col-md-4 col-lg-3">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-3">
                                 <h3 class="footer-sb-hd">
                                     <a class="text-decoration-none text-white" href=".">
                                         Home
@@ -61,7 +61,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-3">
                                 <h3 class="footer-sb-hd">Help</h3>
                                 <ul class="footer-links-area"> 
                                     <li class="">
@@ -86,7 +86,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-6">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-6">
                                 <h3 class="footer-sb-hd">Extra</h3>
                                 <ul class="footer-links-area"> 
                                     <li class="">
