@@ -461,7 +461,9 @@ include "header.php"
                         <div class="related-pro-inner">
                             <span class="pro-sale-tag">sale</span>
                             <div class="product-img-area">
-                                <img class="img-fluid" src="./assets/images/product-img-1.png" alt="">
+                                <a class="text-decoration-none" href="product-detail.php">
+                                    <img class="img-fluid" src="./assets/images/product-img-1.png" alt="">
+                                </a>
                             </div>
                             <div class="product-color-area">
                                 <div class="product-color">
@@ -482,7 +484,9 @@ include "header.php"
                         </div>
                         <div class="related-pro-inner">
                             <div class="product-img-area">
-                                <img class="img-fluid" src="./assets/images/product-img-2.png" alt="">
+                                <a class="text-decoration-none" href="product-detail.php">
+                                    <img class="img-fluid" src="./assets/images/product-img-2.png" alt="">
+                                </a>
                             </div>
                             <div class="product-color-area">
                                 <div class="product-color">
@@ -503,7 +507,9 @@ include "header.php"
                         </div>
                         <div class="related-pro-inner">
                             <div class="product-img-area">
-                                <img class="img-fluid" src="./assets/images/product-img-3.png" alt="">
+                                <a class="text-decoration-none" href="product-detail.php">
+                                    <img class="img-fluid" src="./assets/images/product-img-3.png" alt="">
+                                </a>
                             </div>
                             <div class="product-color-area">
                                 <div class="product-color">
@@ -525,7 +531,9 @@ include "header.php"
                         <div class="related-pro-inner">
                             <span class="pro-sale-tag">sale</span>
                             <div class="product-img-area">
-                                <img class="img-fluid" src="./assets/images/product-img-4.png" alt="">
+                                <a class="text-decoration-none" href="product-detail.php">
+                                    <img class="img-fluid" src="./assets/images/product-img-4.png" alt="">
+                                </a>
                             </div>
                             <div class="product-color-area">
                                 <div class="product-color">

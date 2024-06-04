@@ -38,13 +38,7 @@
                                 <a class="bnner-link" href="#">Book Now</a>
                             </div>
                         </li>
-                        <li class="service-area bg-slate-gray">
-                            <img class="service-img" src="./assets/images/services-img-2.png" alt="">
-                            <div class="service-text-area">
-                                <h2 class="service-title">Safety <br> Eyewear</h2>
-                                <a class="bnner-link" href="#">Book Now</a>
-                            </div>
-                        </li>
+                        
 
                     </ul>
                 </div>

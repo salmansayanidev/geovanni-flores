@@ -32,7 +32,7 @@
                         <div class="row">
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-1.png" alt="">
@@ -60,13 +60,13 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div>  
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-2.png" alt="">
                                     </div>
@@ -93,13 +93,13 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-3.png" alt="">
                                     </div>
@@ -126,13 +126,13 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div> 
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-4.png" alt="">
@@ -160,13 +160,13 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-1.png" alt="">
@@ -194,13 +194,13 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div>  
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-2.png" alt="">
                                     </div>
@@ -227,13 +227,13 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-3.png" alt="">
                                     </div>
@@ -260,13 +260,13 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div> 
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="products-area"> 
+                                <div class="products-area-inner"> 
                                     <span class="pro-sale-tag">sale</span>
                                     <div class="product-img-area">
                                         <img class="img-fluid" src="./assets/images/product-img-4.png" alt="">
@@ -294,7 +294,7 @@
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                         </div>
-                                        <a class="pro-add-cart" href="#">Buy Now</a>
+                                        <a class="pro-add-cart" href="product-detail.php">Buy Now</a>
                                     </div>
                                 </div>
                             </div>

@@ -147,33 +147,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
-    <script src="./assets/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-    <script>
-       
-
-
-    </script>
-
-    <script>
-     // gallery js
-
-    $("[data-fancybox]").fancybox({
-    // Options will go here
-    buttons: ["close"],
-    wheel: false,
-    transitionEffect: "slide",
-    // thumbs          : false,
-    // hash            : false,
-    loop: true,
-    // keyboard        : true,
-    toolbar: true,
-    // animationEffect : false,
-    // arrows          : true,
-    clickContent: false,
-    });
-    </script>
 </body>
 </html>
