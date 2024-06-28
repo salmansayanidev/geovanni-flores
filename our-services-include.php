@@ -30,15 +30,13 @@
                                 <a class="bnner-link" href="#">Book Now</a>
                             </div>
                         </li>
-                        <li class="service-area bg-dusty-brown">
-                            <img class="service-img" src="./assets/images/services-img-1.png" alt="">
+                        <li class="service-area bg-slate-gray">
+                            <img class="service-img" src="./assets/images/services-img-2.png" alt="">
                             <div class="service-text-area">
-                                <h2 class="service-title">Eyewear <br> Selection</h2>
-                                <p class="ser-para">Affordable Styles at Your Fingertips! Explore our budget-friendly eyewear collection. Quality meets affordability. Discover your perfect pair today!</p>
+                                <h2 class="service-title">Safety <br> Eyewear</h2>
                                 <a class="bnner-link" href="#">Book Now</a>
                             </div>
                         </li>
-                        
 
                     </ul>
                 </div>

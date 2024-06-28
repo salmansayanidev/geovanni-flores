@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="about-us-area">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
                             <div class="about_us-img-area">
                                 <img class="about-us-img img-fluid" src="./assets/images/about-us-img.png" alt="">
@@ -22,7 +22,7 @@
                             <div class="about-us-text-area">
                                 <h1 class="section-title ">About Us</h1>    
                                 <p class="para">Stillo has been an established company since 2016, our vision is clear: to make the fundamental gift of vision accessible to all who desire to see. With our extensive 18 years of experience as ophthalmic lab technicians, my brother Oscar and I founded this family-owned business. As first-generation Americans raised by a single mother, we’re intimately familiar with the challenges of limited resources. This understanding drives our dedication to serving our community by providing affordable and reliable eye care services......</p>     
-                                <div class="about-lists">
+                                <div class="about-lists mb-0">
                                     <div class="d-flex justify-content-start align-items-center gap-5">
                                         <img class="img-fluid" src="./assets/images/about-us-img-1.png" alt="">
                                         <h4 class="product-title-aera">Convenience</h4>
