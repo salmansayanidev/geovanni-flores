@@ -61,19 +61,7 @@ $(".our-products-slider-area").slick({
 });
 
 
-// review slider js
 
-$(".review-slider-main").slick({
-  dots: false,
-  infinite: true,
-  speed: 700,
-  // autoplay: true,
-  autoplaySpeed: 2000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  nextArrow: $(".slider-btns.next"),
-  prevArrow: $(".slider-btns.pre"),
-});
 
 // gallery js
 

@@ -9,6 +9,7 @@ include "header.php"
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-7">
+                    
                     <div data-tab-content id="detail-products-1" class="pro-detail-imgs-area tab active">
                         <div class="btn-area-360 text-end">
                             <button type="button" class="btn-360">
@@ -19,19 +20,19 @@ include "header.php"
                             <div class="swiper pro-dtl-slider mySwiper2">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-detail-main-img.png" />
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-detail-main-img.png" />
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-8.png" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-detail-main-img.png" />
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-9.png" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-detail-main-img.png" />
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-10.png" />
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-detail-main-img.png" />
+                                        <img class="img-fluid pro-detail-main-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
                                     </div>
                                 </div>
                             </div>
@@ -47,23 +48,25 @@ include "header.php"
                         <div thumbsSlider="" class="swiper pro-dtl-gllry-sldr mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-detail-main-img.png" />
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-2.png" />
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-8.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-3.png" />
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-9.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-1.png" />
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-10.png" />
                                 </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-2.png" />
+                                <div class="swiper-slide position-relative">
+                                    <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
+                                    <span class="video-icon-area">
+                                        <i class="bi bi-camera-video"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="d-flex justify-content-center">
                             <button class="pro-sldr-showmore">
                                 Show more
@@ -121,8 +124,11 @@ include "header.php"
                                 <div class="swiper-slide">
                                     <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-6.png" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide position-relative">
                                     <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-gllry-img-2.png" />
+                                    <span class="video-icon-area">
+                                        <i class="bi bi-camera-video"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +190,11 @@ include "header.php"
                                 <div class="swiper-slide">
                                     <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-10.png" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide position-relative">
                                     <img class="img-fluid pro-dtl-gllery-img" src="./assets/images/pro-dtl-gllery-img-7.png" />
+                                    <span class="video-icon-area">
+                                        <i class="bi bi-camera-video"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +278,7 @@ include "header.php"
                         <ul class="pro-gllery-images-main">
                             <li data-tab-target="#detail-products-1" class="pro-gllry-img-area active">
                                 <button class="pro-gllry-img-tabs">
-                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-1.png" alt="">
+                                    <img class="img-fluid pro-gllry-img " src="./assets/images/pro-dtl-gllery-img-7.png" alt="">
                                 </button>
                             </li>
                             <li data-tab-target="#detail-products-2" class="pro-gllry-img-area">

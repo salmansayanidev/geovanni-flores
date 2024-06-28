@@ -56,7 +56,7 @@
   }
 
   .pro-detail-imgs-area {
-    padding: 0 20px;
+    padding: 0 35px;
   }
 
   .pro-gllery-images-main {
@@ -264,9 +264,6 @@
     overflow: auto;
   }
 
-  .frame-details-tabel {
-    min-width: 1300px;
-  }
 
   .banner-section {
     padding: 175px 0;
@@ -316,13 +313,25 @@
   .container {
     max-width: 960px;
   }
+  .frame-details-tabel {
+    min-width: 1300px;
+  }
 }
 
 @media (max-width: 1034px) {
   html {
     font-size: 50%;
   }
-
+  .newsletter-section {
+  padding: 30px 0 0;
+}
+  section.about-us-section.about-us {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.pro-cancel-btn {
+  top: 43px;
+}
   .header-right-area {
     gap: 10px;
   }
@@ -472,6 +481,12 @@
   .container {
     max-width: 720px;
   }
+  .pro-cancel-btn {
+    top: 40px;
+}
+  section.about-us-section.about-us {
+    padding-bottom: 60px;
+}
 
   .our-porducts-sec .slick-dots {
     display: none !important;
@@ -603,6 +618,7 @@
 
   .prescription-img {
     max-width: 100%;
+    max-height: 260px;
   }
 
   .banner-section {
@@ -610,10 +626,10 @@
   }
 
   .discount-area {
-    background-image: none;
     background-color: #e7e7e7;
-    padding: 30px 60px;
+    padding: 30px 40px;
     border-radius: 10px;
+    background-size: cover;
   }
 
   .our-porducts-sec {
@@ -680,8 +696,15 @@
 
   .container {
     max-width: 100%;
+    padding: 0 12px;
   }
-
+  .product-img-area {
+    display: flex;
+    justify-content: center;
+  }
+  .discount-area {
+    background-image: none;
+}
   .pro-dtl-sldr-btn {
     position: unset;
     transform: translateY(0);
@@ -767,15 +790,15 @@
 }
 
 @media (max-width: 490px) {
-  .product-img-area {
-    display: flex;
-    justify-content: center;
-  }
+
 
   .newsletter-mail-area {
     flex-direction: column;
   }
-
+  .products-area, .products-area-inner {
+    background-color: #f1f2f2;
+    border: 1px solid #00000038;
+}
   .newletter-input {
     max-width: 350px;
     height: 45px;
@@ -792,6 +815,7 @@
   .trending-pro-title {
     line-height: 1.1;
     font-size: 4rem;
+    margin-bottom: 10px;
   }
 
   .bnner-title {
@@ -910,10 +934,18 @@
   html {
     font-size: 42%;
   }
+  .experience-area {
+    height: 100px;
+    width: 100px;
+}
   .products-area, 
   .products-area-inner {
     background-color: #f1f2f2;
     border: 1px solid #00000038;
+}
+.previous.action-button-previous {
+  height: 20px;
+  width: 20px;
 }
 .subs-pkg-area {
   width: 80%;
@@ -964,6 +996,13 @@
   .frame-tabs-btn {
     font-size: 1.6rem;
   }
+  .pro-cancel-btn {
+    top: 27px;
+    right: 20px;
+}
+  .trending-pro-title {
+    font-size: 3.5rem;
+}
   .subs-pkg-area {
     width: 90%;
   }

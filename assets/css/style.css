@@ -6,7 +6,6 @@
   margin: 0;
 }
 
-
 html {
   font-size: 62%;
 }
@@ -379,7 +378,7 @@ span.off {
 .our-porducts-sec {
   padding: 10px 0 70px;
 }
-.products-area , 
+.products-area,
 .products-area-inner {
   background-color: white;
   border-radius: 30px;
@@ -388,7 +387,7 @@ span.off {
   transition: 0.3s;
   position: relative;
 }
-.products-area:hover , 
+.products-area:hover,
 .products-area-inner:hover {
   background-color: #f1f2f2;
   border: 1px solid #00000038;
@@ -396,7 +395,7 @@ span.off {
 .our-products-slider-area {
   margin: 0 10px;
 }
-.products-area , 
+.products-area,
 .products-area-inner {
   margin: 0 8px;
 }
@@ -606,6 +605,9 @@ section.our-porducts-sec.inner {
 }
 .padd-top-0 .newsletter-section {
   padding-top: 0 !important;
+}
+section.about-us-section.about-us {
+  padding-top: 70px;
 }
 /* about us css end */
 
@@ -1392,7 +1394,7 @@ img.img-fluid.pro-gllry-img {
   height: 20%;
   /* box-sizing: border-box; */
   padding: 10px 10px 40px;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .mySwiper .swiper-slide {
@@ -1429,7 +1431,7 @@ img.img-fluid.pro-gllry-img {
   top: 0;
   content: "";
   background-color: blue;
-  opacity: 0.5;  /* Make the overlay semi-transparent */
+  opacity: 0.5; /* Make the overlay semi-transparent */
   z-index: 99;
 }
 
@@ -1440,7 +1442,7 @@ img.img-fluid.pro-gllry-img {
   width: 100%;
 }
 .btn-area-360 {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 .pro-dtl-sldr-btn {
   width: 24px;
@@ -1551,6 +1553,13 @@ img.img-fluid.pro-gllry-img {
   padding: 18px 10px;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
+  background-color: white;
+}
+.frame-details-tabel th:first-child {
+  border-radius: 10px 0 0 0px;
+}
+.frame-details-tabel th:last-child {
+  border-radius: 0 10px 0px 0px;
 }
 .frame-dtl-img-area {
   width: 34%;
@@ -1567,10 +1576,17 @@ img.img-fluid.pro-gllry-img {
   border-right: 1px solid black;
   vertical-align: middle;
   height: 85px;
+  background-color: white;
 }
 .frame-details-tabel td:last-child,
 .frame-details-tabel th:last-child {
   border-right: none;
+}
+.frame-details-tabel td:first-child {
+  border-radius: 0px 0px 0px 10px;
+}
+.frame-details-tabel td:last-child {
+  border-radius: 0px 0px 10px 0px;
 }
 .frame-details-tabel td.frame-details-md {
   font-size: 1.8rem;
@@ -1612,30 +1628,35 @@ img.img-fluid.pro-gllry-img {
   font-family: var(--Outfit-Medium);
   color: var(--theme-color);
   margin-bottom: 25px;
+  text-transform: capitalize;
 }
-.Prescription-btn {
+.prescription-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   border-radius: 10px;
   border: none;
-  padding: 30px 20px;
+  padding: 20px 10px;
   width: 100%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.4s;
 }
-.Prescription-btn h4 {
-  font-size: 3.8rem;
-  font-family: var(--Outfit-SemiBold);
+.lens-radio-title {
+  font-size: 2rem;
+  font-family: var(--Outfit-Bold);
   color: #373737;
   margin-bottom: 10px;
   text-align: start;
 }
-.Prescription-btn p {
-  font-size: 2.4rem;
+.lens-radio-para {
+  font-size: 1.6rem;
   font-family: var(--Outfit-Regular);
   color: black;
+  line-height: 1.2;
 }
-.Prescription-btn i {
+.lens-arrow-icon {
   font-size: 3rem;
   color: var(--theme-color);
   transform: rotate(-45deg);
@@ -1643,7 +1664,7 @@ img.img-fluid.pro-gllry-img {
 .pro-detail-area.lens {
   background-color: #f1f2f2;
   margin-bottom: 20px;
-  padding: 43px 35px;
+  padding: 43px 20px;
 }
 .pro-gllry-img-tabs {
   background-color: transparent;
@@ -1651,6 +1672,20 @@ img.img-fluid.pro-gllry-img {
 }
 .pro-dtl-gllry-sldr .mySwiper .swiper-slide-thumb-active img {
   opacity: 1;
+}
+span.video-icon-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 4rem;
+  color: white;
+  background-color: #2537597d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 /* product detail css end */
 
@@ -1754,5 +1789,84 @@ img.img-fluid.pro-gllry-img {
 .prescrip-manually-btn:hover {
   background-color: var(--theme-color);
   color: white;
+}
+.pro-cancel-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--theme-color);
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  z-index: 999;
+}
+.select-lens-radio[type="radio"]:checked + .prescription-label {
+  border: 3px solid var(--theme-color);
+  box-shadow: 0 0 10px 10px #0000001a;
+}
+.prescription-label:hover {
+  border: 3px solid var(--theme-color);
+  box-shadow: 0 0 10px 10px #0000001a;
+}
+.question-mark-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: var(--theme-color);
+  font-size: 2rem;
+}
+.pupillary-distance-radio {
+  height: 20px;
+  width: 20px;
+  accent-color: var(--theme-color);
+}
+.pupillary-distance-radio-area {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 40px;
+}
+.pupillary-distance-label {
+  font-size: 2rem;
+  font-family: var(--Outfit-Medium);
+  color: var(--theme-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.lens-select {
+  font-size: 1.8rem;
+  font-family: var(--Outfit-Regular);
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+.lens-select:focus {
+  border-color: var(--theme-color);
+  outline: 0;
+  box-shadow: none;
+}
+.lens-select option {
+  font-size: 1.6rem;
+}
+.select-lens-sm-title {
+  font-size: 1.6rem;
+  color: var(--theme-color);
+  font-family: var(--Outfit-Medium);
+}
+.select-flex-list {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+.select-flex {
+  width: 33%;
 }
 /* select lens css sen */
