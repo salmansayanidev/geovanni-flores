@@ -1,35 +1,3 @@
-// products slider js
-
-// $(".our-products-slider-area").slick({
-//   dots: true,
-//   infinite: false,
-//   speed: 700,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   responsive: [
-//     {
-//       breakpoint: 1034,
-//       settings: {
-//         slidesToShow: 3,
-//       },
-//     },
-//     {
-//       breakpoint: 992,
-//       settings: {
-//         slidesToShow: 2,
-//       },
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//       },
-//     },
-//   ],
-// });
-
 $(".our-products-slider-area").slick({
   dots: true,
   infinite: false,
@@ -59,9 +27,6 @@ $(".our-products-slider-area").slick({
     },
   ],
 });
-
-
-
 
 // gallery js
 

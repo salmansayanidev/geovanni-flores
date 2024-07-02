@@ -1304,7 +1304,7 @@ img.img-fluid.pro-gllry-img {
   object-position: center;
   border: 1px solid white;
 }
-.pro-gllry-img-area.active .pro-gllry-img {
+.pro-gllry-img-tabs.active .pro-gllry-img {
   border: 1px solid var(--theme-color);
   box-shadow: 0 4px 4px 0 #00000042;
 }
@@ -1526,10 +1526,10 @@ img.img-fluid.pro-gllry-img {
   background-color: var(--theme-color);
   display: none;
 }
-.frame-dtl-tabs.active .frame-tabs-btn {
+.frame-tabs-btn.active {
   opacity: 100%;
 }
-.frame-dtl-tabs.active .frame-tabs-btn::before {
+.frame-tabs-btn.active::before {
   display: block;
 }
 .frame-detail-area {
@@ -1777,9 +1777,9 @@ span.video-icon-area {
 .prescrip-manually-btn {
   font-size: 2rem;
   font-family: var(--Outfit-SemiBold);
-  color: var(--theme-color);
-  padding: 24px 10px;
-  background-color: transparent;
+  color: white;
+  padding: 20px 10px;
+  background-color: var(--theme-color);
   border: 1px solid var(--theme-color);
   border-radius: 10px;
   width: 100%;
@@ -1787,8 +1787,8 @@ span.video-icon-area {
   transition: 0.5s;
 }
 .prescrip-manually-btn:hover {
-  background-color: var(--theme-color);
-  color: white;
+  background-color: transparent;
+  color: var(--theme-color);
 }
 .pro-cancel-btn {
   background-color: transparent;
@@ -1819,6 +1819,7 @@ span.video-icon-area {
   height: 20px;
   width: 20px;
   accent-color: var(--theme-color);
+  cursor: pointer;
 }
 .pupillary-distance-radio-area {
   display: flex;
@@ -1869,4 +1870,29 @@ span.video-icon-area {
 .select-flex {
   width: 33%;
 }
+#two-numbers-select .select-flex {
+  width: 49%;
+}
+#two-numbers-select {
+  display: none;
+}
+#one-number-select.active {
+  display: none;
+}
+#two-numbers-select.active {
+  display: flex;
+}
+.step:not(.active) {
+  display: none;
+}
+.step-pre-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--theme-color);
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
 /* select lens css sen */
+

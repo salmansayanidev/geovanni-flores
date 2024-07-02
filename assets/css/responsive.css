@@ -140,7 +140,7 @@
     padding: 32px 10px 12px;
   }
 
-  .products-area , 
+  .products-area,
   .products-area-inner {
     margin: 0 5px;
   }
@@ -264,7 +264,6 @@
     overflow: auto;
   }
 
-
   .banner-section {
     padding: 175px 0;
   }
@@ -323,15 +322,15 @@
     font-size: 50%;
   }
   .newsletter-section {
-  padding: 30px 0 0;
-}
+    padding: 30px 0 0;
+  }
   section.about-us-section.about-us {
     padding-top: 40px;
     padding-bottom: 100px;
-}
-.pro-cancel-btn {
-  top: 43px;
-}
+  }
+  .pro-cancel-btn {
+    top: 43px;
+  }
   .header-right-area {
     gap: 10px;
   }
@@ -483,10 +482,10 @@
   }
   .pro-cancel-btn {
     top: 40px;
-}
+  }
   section.about-us-section.about-us {
     padding-bottom: 60px;
-}
+  }
 
   .our-porducts-sec .slick-dots {
     display: none !important;
@@ -704,7 +703,7 @@
   }
   .discount-area {
     background-image: none;
-}
+  }
   .pro-dtl-sldr-btn {
     position: unset;
     transform: translateY(0);
@@ -790,15 +789,14 @@
 }
 
 @media (max-width: 490px) {
-
-
   .newsletter-mail-area {
     flex-direction: column;
   }
-  .products-area, .products-area-inner {
+  .products-area,
+  .products-area-inner {
     background-color: #f1f2f2;
     border: 1px solid #00000038;
-}
+  }
   .newletter-input {
     max-width: 350px;
     height: 45px;
@@ -937,20 +935,20 @@
   .experience-area {
     height: 100px;
     width: 100px;
-}
-  .products-area, 
+  }
+  .products-area,
   .products-area-inner {
     background-color: #f1f2f2;
     border: 1px solid #00000038;
-}
-.previous.action-button-previous {
-  height: 20px;
-  width: 20px;
-}
-.subs-pkg-area {
-  width: 80%;
-  padding: 20px 10px 10px;
-}
+  }
+  .previous.action-button-previous {
+    height: 20px;
+    width: 20px;
+  }
+  .subs-pkg-area {
+    width: 80%;
+    padding: 20px 10px 10px;
+  }
   .service-img.img-3 {
     height: auto;
     width: 44%;
@@ -999,10 +997,10 @@
   .pro-cancel-btn {
     top: 27px;
     right: 20px;
-}
+  }
   .trending-pro-title {
     font-size: 3.5rem;
-}
+  }
   .subs-pkg-area {
     width: 90%;
   }
