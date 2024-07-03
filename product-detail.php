@@ -276,23 +276,23 @@ include "header.php"
                             </li>
                         </ul>
                         <ul class="pro-gllery-images-main">
-                            <li data-tab-target="#detail-products-1" class="pro-gllry-img-area active">
-                                <button class="pro-gllry-img-tabs">
+                            <li class="pro-gllry-img-area">
+                                <button data-tab-target="#detail-products-1" class="pro-gllry-img-tabs active">
                                     <img class="img-fluid pro-gllry-img " src="./assets/images/pro-dtl-gllery-img-7.png" alt="">
                                 </button>
                             </li>
-                            <li data-tab-target="#detail-products-2" class="pro-gllry-img-area">
-                                <button class="pro-gllry-img-tabs">
+                            <li class="pro-gllry-img-area">
+                                <button data-tab-target="#detail-products-2" class="pro-gllry-img-tabs">
                                     <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-2.png" alt="">
                                 </button>
                             </li>
-                            <li data-tab-target="#detail-products-3" class="pro-gllry-img-area">
-                                <button class="pro-gllry-img-tabs">
+                            <li class="pro-gllry-img-area">
+                                <button data-tab-target="#detail-products-3" class="pro-gllry-img-tabs">
                                     <img class="img-fluid pro-gllry-img " src="./assets/images/pro-dtl-gllery-img-7.png" alt="">
                                 </button>
                             </li>
-                            <li data-tab-target="#detail-products-4" class="pro-gllry-img-area">
-                                <button class="pro-gllry-img-tabs">
+                            <li class="pro-gllry-img-area">
+                                <button data-tab-target="#detail-products-4" class="pro-gllry-img-tabs">
                                     <img class="img-fluid pro-gllry-img " src="./assets/images/pro-gllry-img-1.png" alt="">
                                 </button>
                                 <!-- <span class="more-imgs-tag">+5 more</span> -->
@@ -349,18 +349,18 @@ include "header.php"
                 <div class="col-12">
                     <div class="d-flex justify-content-center">
                         <ul class="frame-dtl-tabs-btn-area d-flex justify-content-between align-items-center">
-                            <li data-view-target="#DESCRIPTION" class="frame-dtl-tabs">
-                                <button type="button" class="frame-tabs-btn">
+                            <li class="frame-dtl-tabs">
+                                <button data-view="DESCRIPTION" type="button" class="frame-tabs-btn">
                                     DESCRIPTION
                                 </button>
                             </li>
-                            <li data-view-target="#DETAILS" class="frame-dtl-tabs active">
-                                <button type="button" class="frame-tabs-btn">
+                            <li class="frame-dtl-tabs">
+                                <button data-view="DETAILS" type="button" class="frame-tabs-btn active">
                                     DETAILS
                                 </button>
                             </li>
-                            <li data-view-target="#LENS_RECOMMENDATION" class="frame-dtl-tabs">
-                                <button type="button" class="frame-tabs-btn">
+                            <li class="frame-dtl-tabs">
+                                <button data-view="LENS_RECOMMENDATION" type="button" class="frame-tabs-btn">
                                     LENS RECOMMENDATION
                                 </button>
                             </li>
@@ -368,9 +368,9 @@ include "header.php"
                     </div>
                 </div>
                 <div class="col-12">
-                    <div data-view-content id=" DESCRIPTION" class="frame-detail-area"></div>
+                    <div data-content="DESCRIPTION" class="frame-detail-area"></div>
 
-                    <div data-view-content id="DETAILS" class="frame-detail-area active">
+                    <div data-content="DETAILS" class="frame-detail-area active">
                         <div class="detail-tabel-area">
                             <table class="frame-details-tabel">
                                 <tr>
@@ -452,7 +452,7 @@ include "header.php"
                         </div>
                     </div>
 
-                    <div data-view-content id="LENS_RECOMMENDATION" class="frame-detail-area"></div>
+                    <div data-content="LENS_RECOMMENDATION" class="frame-detail-area"></div>
                 </div>
             </div>
         </div>

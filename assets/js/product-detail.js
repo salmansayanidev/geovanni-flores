@@ -1,18 +1,9 @@
-const detailTabs = document.querySelectorAll("[data-view-target]");
-const detailTabContents = document.querySelectorAll("[data-view-content]");
+$("[data-view]").click(function () {
+  $("[data-view]").removeClass("active");
+  $("[data-content]").removeClass("active");
 
-detailTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.viewTarget);
-    detailTabContents.forEach((tabContent) => {
-      tabContent.classList.remove("active");
-    });
-    detailTabs.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-    tab.classList.add("active");
-    target.classList.add("active");
-  });
+  $(this).addClass("active");
+  $(`[data-content="${$(this).data("view")}"]`).addClass("active");
 });
 
 // slider tabs js
