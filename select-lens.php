@@ -1204,7 +1204,7 @@ include "header.php"
                                     </div>
                                 </div>
 
-                                <button type="button" class="prescrip-manually-btn mt-4">
+                                <button type="submit" class="prescrip-manually-btn mt-4">
                                     SUBMIT
                                 </button>
                             </div>
