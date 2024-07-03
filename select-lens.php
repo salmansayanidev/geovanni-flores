@@ -73,6 +73,7 @@ include "header.php"
                 <div class="col-12 col-lg-5">
 
                     <form id="msform" class="position-relative" action="">
+
                         <div id="step-1" class="pro-detail-area lens position-relative step step-1 active ">
                             <h3 class="select-lens-title">Select Lens Type:</h3>
                             <div class="">
@@ -223,7 +224,7 @@ include "header.php"
                                 </div>
 
                                 <div id="one-number-select" class="">
-                                    <select class="form-select lens-select" aria-label="Default select example">
+                                    <select id="pupillary-distance-select-1" class="form-select lens-select pupillary-distance-select" aria-label="Default select example">
                                         <option selected disabled="" value="">Enter your pupillary distance</option>
                                         <option value="54">54</option>
                                         <option value="55">55</option>
@@ -258,7 +259,7 @@ include "header.php"
 
                                 <div id="two-numbers-select" class="mb-4 select-flex-list">
                                     <div class="select-flex">
-                                        <select class="form-select lens-select" aria-label="Default select example">
+                                        <select id="pupillary-distance-select-2" class="form-select lens-select pupillary-distance-select" aria-label="Default select example">
                                             <option selected disabled="" value="">Right</option>
                                             <option value="17.5" class="sl-notranslate">17.5</option>
                                             <option value="18.0" class="sl-notranslate">18.0</option>
@@ -309,7 +310,7 @@ include "header.php"
                                         </select>
                                     </div>
                                     <div class="select-flex">
-                                        <select class="form-select lens-select" aria-label="Default select example">
+                                        <select id="pupillary-distance-select-3" class="form-select lens-select pupillary-distance-select" aria-label="Default select example">
                                             <option selected disabled="" value="">Left</option>
                                             <option value="17.5" class="sl-notranslate">17.5</option>
                                             <option value="18.0" class="sl-notranslate">18.0</option>
@@ -760,6 +761,20 @@ include "header.php"
                                             </select>
                                         </div>
 
+                                        <div class="select-flex">
+                                            <label class="pupillary-distance-label mb-3">
+                                                Seg-ht or OC
+                                            </label>
+                                            <select class="form-select lens-select" aria-label="Default select example">
+                                                <option selected value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+
                                     </div>
 
                                     <hr class="mt-5 mb-5 opacity-75 text-black">
@@ -1156,6 +1171,20 @@ include "header.php"
                                             </select>
                                         </div>
 
+                                        <div class="select-flex">
+                                            <label class="pupillary-distance-label mb-3">
+                                                Seg-ht or OC
+                                            </label>
+                                            <select class="form-select lens-select" aria-label="Default select example">
+                                                <option selected value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+
                                     </div>
 
                                     <hr class="mt-5 mb-5 opacity-75 text-black">
@@ -1180,6 +1209,7 @@ include "header.php"
                                 </button>
                             </div>
                         </div>
+
                     </form>
                     <div class="pro-detail-area lens d-flex justify-content-start flex-column gap-0 row-gap-5">
                         <div class="">
