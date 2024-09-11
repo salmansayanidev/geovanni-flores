@@ -333,6 +333,9 @@ include "header.php"
                             <a href="select-lens.php" type="button" class="select-lence-btn text-decoration-none text-center">
                                 SELECT LENSES
                             </a>
+                            <button type="button" class="select-lence-btn bg-trans cart-btn">
+                                ADD TO CART
+                            </button>
                             <button type="button" class="select-lence-btn bg-trans">
                                 ADD TO FAVOURITES
                             </button>
@@ -625,5 +628,13 @@ $(".related-pro-slider").slick({
     },
   ],
 });
-
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        const selectedValue = getQueryParam('selected');
+        const btn = document.querySelector(".cart-btn")
+        if (selectedValue === 'build-frams') {
+            btn.classList.add("active")
+        }
 </script>

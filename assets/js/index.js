@@ -44,3 +44,4 @@ $("[data-fancybox]").fancybox({
   // arrows          : true,
   clickContent: false,
 });
+

@@ -103,3 +103,4 @@ $(".review-slider-main").slick({
   nextArrow: $(".slider-btns.next"),
   prevArrow: $(".slider-btns.pre"),
 });
+
