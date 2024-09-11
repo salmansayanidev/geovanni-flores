@@ -2,27 +2,109 @@
 
 const selectLensRadios = document.querySelectorAll(".select-lens-radio");
 const formStep = document.querySelectorAll(".step");
+const msform = document.getElementById("msform");
+const pricelences = document.querySelectorAll(".price-lences");
+var prescriptionimg = document.querySelector(".prescription-img");
 
 let step = 1;
 
-// selectLensRadios.forEach((selectLensRadio) => {
-//   selectLensRadio.addEventListener("change", () => {
-//     setUpdate((step = step + 1));
-//   });
-// });
 
 $(".next-step-btn").click(function () {
-  setUpdate((step = step + 1));
+  step = step + 1;
+  setUpdate(step);
+  const radio = msform.querySelectorAll(".select-lens-radio");
+  radio.forEach(item => {
+    item.addEventListener("change", () => {
+      pricelences.forEach(price => {
+        if (price.dataset.price === item.value) {
+          pricelences.forEach(element => {
+            element.classList.remove("active");
+          });
+          price.classList.add("active");
+        }
+      });
+    });
+  });
 });
 
 $(".step-pre-btn").click(function () {
-  setUpdate((step = step - 1));
+  step = step - 1;
+  setUpdate(step);
 });
 
 function setUpdate(step) {
+
   $(`.step`).removeClass("active");
   $(`.step-${step}`).addClass("active");
 }
+
+document.getElementById("dropArea").addEventListener("click", function () {
+  document.getElementById("uploadFile").click();
+});
+
+const pupDisSelectOne = document.querySelector("#pupillary-distance-select-1");
+const pupDisSelectTwo = document.querySelector("#pupillary-distance-select-2");
+const pupDisSelectThree = document.querySelector("#pupillary-distance-select-3");
+
+$(".pupillary-distance-select").on("change", function () {
+  if (pupDisSelectTwo.value && pupDisSelectThree.value) {
+    $(".prescription-values-area").addClass("active");
+  } else if (pupDisSelectOne.value) {
+    $(".prescription-values-area").removeClass("active");
+    $(".prescription-values-area").addClass("active");
+  }
+});
+
+function fileChangeHandler(event) {
+  var file = event.target.files[0];
+  if (file) {
+    var fileName = URL.createObjectURL(file);
+    var previewImg = document.getElementById("previewImg");
+    previewImg.setAttribute("src", fileName);
+    var prescriptionImg = document.querySelector(".prescription-img");
+    var pupillarydistanceselect1 = document.querySelector("#pupillary-distance-select-1");
+    var lencesSelect = document.querySelectorAll(".only-lencs");
+
+    prescriptionImg.classList.add("active");
+
+    if (step === 4) {  
+      lencesSelect.forEach(item => {
+        item.options[2].setAttribute("selected", "")
+      });
+      console.log(pupillarydistanceselect1.options[2], "option")
+      pupillarydistanceselect1.options[0].removeAttribute("selected", "")
+      pupillarydistanceselect1.options[2].setAttribute("selected", "")
+      $(".prescription-values-area").addClass("active");
+      step = 5;        
+      setUpdate(step);
+    }
+  }
+}
+
+function dragOverHandler(event) {
+  event.preventDefault();
+  document.getElementById("dropArea").className = "draging dragBox";
+}
+
+function dropHandler(event) {
+  event.preventDefault();
+  document.getElementById("dropArea").className = "dragBox";
+  var file = event.dataTransfer.files[0];
+  if (file) {
+    var fileName = URL.createObjectURL(file);
+    var previewImg = document.getElementById("previewImg");
+    previewImg.setAttribute("src", fileName);
+    var prescriptionImg = document.querySelector(".prescription-img");
+    prescriptionImg.classList.add("active");
+    if (step === 4) {  
+      step = 4;        
+      setUpdate(step);
+    }
+  }
+}
+
+document.getElementById("uploadFile").addEventListener("change", fileChangeHandler);
+
 
 // swiper pro-dtl-slider js
 
@@ -63,34 +145,6 @@ var swiper2 = new Swiper(".pro-dtl-slider", {
 
 ("use strict");
 
-document.getElementById("dropArea").addEventListener("click", function () {
-  document.getElementById("uploadFile").click();
-});
-
-function fileChangeHandler(event) {
-  var file = event.target.files[0];
-  if (file) {
-    var fileName = URL.createObjectURL(file);
-    var previewImg = document.getElementById("previewImg");
-    previewImg.setAttribute("src", fileName);
-  }
-}
-
-function dragOverHandler(event) {
-  event.preventDefault();
-  document.getElementById("dropArea").className = "draging dragBox";
-}
-
-function dropHandler(event) {
-  event.preventDefault();
-  document.getElementById("dropArea").className = "dragBox";
-  var file = event.dataTransfer.files[0];
-  if (file) {
-    var fileName = URL.createObjectURL(file);
-    var previewImg = document.getElementById("previewImg");
-    previewImg.setAttribute("src", fileName);
-  }
-}
 
 // pupillary_distance_radio js
 
@@ -127,15 +181,14 @@ while (currentYear >= earliestYear) {
 
 // Pupillary Distance js
 
-const pupDisSelectOne = document.querySelector("#pupillary-distance-select-1");
-const pupDisSelectTwo = document.querySelector("#pupillary-distance-select-2");
-const pupDisSelectThree = document.querySelector("#pupillary-distance-select-3");
-
-$(".pupillary-distance-select").on("change", function () {
-  if (pupDisSelectTwo.value && pupDisSelectThree.value) {
-    $(".prescription-values-area").addClass("active");
-  } else if (pupDisSelectOne.value) {
-    $(".prescription-values-area").removeClass("active");
-    $(".prescription-values-area").addClass("active");
-  }
-});
+  // const pupDisSelectOne = document.querySelector("#pupillary-distance-select-1");
+  // const pupDisSelectTwo = document.querySelector("#pupillary-distance-select-2");
+  // const pupDisSelectThree = document.querySelector("#pupillary-distance-select-3");
+  // $(".pupillary-distance-select").on("change", function () {
+  //   if (pupDisSelectTwo.value && pupDisSelectThree.value) {
+  //     $(".prescription-values-area").addClass("active");
+  //   } else if (pupDisSelectOne.value) {
+  //     $(".prescription-values-area").removeClass("active");
+  //     $(".prescription-values-area").addClass("active");
+  //   }
+  // });
